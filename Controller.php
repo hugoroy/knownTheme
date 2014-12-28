@@ -1,6 +1,6 @@
 <?php
 
-    namespace Themes\Cherwell {
+    namespace Themes\Hugoroy {
 
         use Idno\Entities\User;
 
@@ -13,8 +13,8 @@
 
                 \Idno\Core\site()->events()->addListener('page/get',function(\Idno\Core\Event $event) {
                     if ($event->data()['page_class'] == 'Idno\Pages\Homepage') {
-                        if (!empty(\Idno\Core\site()->config()->cherwell['profile_user'])) {
-                            if ($profile_user = User::getByHandle(\Idno\Core\site()->config()->cherwell['profile_user'])) {
+                        if (!empty(\Idno\Core\site()->config()->hugoroy['profile_user'])) {
+                            if ($profile_user = User::getByHandle(\Idno\Core\site()->config()->hugoroy['profile_user'])) {
                                 \Idno\Core\site()->currentPage()->setOwner($profile_user);
                             }
                         }
@@ -24,7 +24,7 @@
                     }
                 });
 
-                \Idno\Core\site()->addPageHandler('/admin/cherwell/?','Themes\Cherwell\Pages\Admin');
+                \Idno\Core\site()->addPageHandler('/admin/hugoroy/?','Themes\Hugoroy\Pages\Admin');
 
             }
 
@@ -34,10 +34,10 @@
              */
             static function getBackgroundImageURL() {
 
-                if (!empty(\Idno\Core\site()->config()->cherwell['bg_id'])) {
-                    return \Idno\Core\site()->config()->getDisplayURL() . 'file/' . \Idno\Core\site()->config()->cherwell['bg_id'];
+                if (!empty(\Idno\Core\site()->config()->hugoroy['bg_id'])) {
+                    return \Idno\Core\site()->config()->getDisplayURL() . 'file/' . \Idno\Core\site()->config()->hugoroy['bg_id'];
                 } else {
-                    return \Idno\Core\site()->config()->getDisplayURL() . 'Themes/Cherwell/img/cherwell.jpg';
+                    return \Idno\Core\site()->config()->getDisplayURL() . 'Themes/Hugoroy/img/hugoroy.jpg';
                 }
 
             }
