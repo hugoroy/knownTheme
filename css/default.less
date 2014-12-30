@@ -121,22 +121,31 @@ body {
 
 .idno_pages_homepage, .idno_pages_user_view {
 
-    .idno-content, .idno-object {
-        margin-top: 0;
-        border-radius: 0;
-        border-bottom: 0;
+    .idno-entry {
+
+        .idno-content, .idno-object {
+            margin-top: 0;
+            border-radius: 0;
+            border-bottom: 0;
+        }
 
         &:first-child {
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            margin-top: 1em;
+            .idno-content, .idno-object {
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                margin-top: 1em;
+            }
         }
         &:last-child {
-            border-bottom-left-radius: 10px;
-            border-bottom-right-radius: 10px;
-            border-bottom-width: 1px;
+            .idno-content, .idno-object {
+                border-bottom-left-radius: 10px;
+                border-bottom-right-radius: 10px;
+                border-bottom-width: 1px;
+            }
         }
+    }
 
+    .idno-content, .idno-object {
         .author {
             .icon-container img.u-photo {
                 max-height: 28px;
