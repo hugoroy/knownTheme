@@ -29,13 +29,37 @@
     }
 
     .author {
-    }
-    .author + break {
-        display: none;
+        float: left;
+        max-width: 66%;
+        & + .break {
+            display: none;
+        }
+        &.p-author {
+            border-bottom: 0;
+        }
+        .icon-container img {
+            max-height: 48px;
+            width: auto;
+            margin-right: 10px;
+        }
+        .fn {
+            vertical-align: top;
+            line-height: 2em;
+            font-size: 1.6em;
+            font-weight: 600;
+            color: #333;
+        }
     }
     .datestamp {
+        float: right;
+        max-width: 33%;
+        a {
+            margin-right: 10px;
+        }
     }
     .entry-content {
+        clear: both;
+        border-top: 1px solid #EEE;
     }
     .footer {
     }
