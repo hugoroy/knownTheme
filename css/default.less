@@ -20,24 +20,25 @@
 
 
 
-.idno-content {
+.idno-content, .idno-object {
     border-radius: 10px;
     padding: 0;
+    min-width: 299px;
 
     .author, .datestamp, .entry-content, .footer {
         padding: 20px;
     }
 
     .author {
-        float: left;
-        max-width: 66%;
+        padding-bottom: 0;
         & + .break {
             display: none;
         }
         &.p-author {
             border-bottom: 0;
+            white-space: nowrap;
         }
-        .icon-container img {
+        .icon-container img.u-photo {
             max-height: 48px;
             width: auto;
             margin-right: 10px;
@@ -51,9 +52,9 @@
         }
     }
     .datestamp {
-        float: right;
-        max-width: 33%;
-        a {
+        padding-top: 0;
+        padding-bottom: 0;
+        p {
             margin-right: 10px;
         }
     }
@@ -62,6 +63,10 @@
         border-top: 1px solid #EEE;
     }
     .footer {
+        font-size: 100%;
+        .interactions {
+            float: none;
+        }
     }
 }
 
