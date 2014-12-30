@@ -57,10 +57,15 @@ body {
     .datestamp {
         padding-top: 0;
         padding-bottom: 0;
+        margin-top: -10px;
+        float: right;
         p {
             margin-right: 10px;
             text-align: right;
         }
+    }
+    .reply-text {
+        padding: 10 20px 0;
     }
     .entry-content {
         clear: both;
@@ -75,9 +80,22 @@ body {
         .interactions {
             float: none;
         }
+        br {
+            display: none;
+            &:after {
+                clear: both;
+            }
+        }
     }
 }
 
+.idno-entry-photo {
+    .entry-content {
+        a img.u-photo {
+            width: 100%;
+        }
+    }
+}
 
 
 .idno_pages_homepage, .idno_pages_user_view {
