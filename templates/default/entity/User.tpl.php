@@ -1,24 +1,25 @@
 <div class="row h-card">
-    <div class="span8 profile offset2">
+    <div class="profile"><!--class="span8 profile offset2"-->
 
-        <div class="">
+        <!-- <div class=""> -->
             <div class="namebadge">
                 <p>
                     <a href="<?= $vars['user']->getURL() ?>" class="u-url icon-container"><img class="u-photo"
                                                                                                src="<?= $vars['user']->getIcon() ?>"/></a>
                 </p>
             </div>
-            <div class=" ">
-                <div class="">
-                    <div class="">
+
+            <!-- <div class=" "> -->
+            <!--     <div class=""> -->
+                    <div class="profilename">
                         <h1 class="p-profile">
                             <a href="<?= $vars['user']->getURL() ?>"
                                class="u-url p-name fn"><?= $vars['user']->getTitle() ?></a>
                         </h1>
                     </div>
-                </div>
-                <div class="row">
-                    <div class="span8">
+                <!-- </div> -->
+                <!-- <div class="row"> -->
+                    <div class="profiledescription"> <!--class="span8"-->
                         <div class="e-note"><?php
                                 $description = $vars['user']->getDescription();
                                 if (!empty($description)) {
@@ -50,8 +51,8 @@
 
                         ?>
                     </div>
-                </div>
-            </div>
-        </div>
+            <!--     </div> -->
+            <!-- </div> -->
+        <!-- </div> -->
     </div>
 </div>
