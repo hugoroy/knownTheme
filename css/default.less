@@ -2,8 +2,11 @@
 .link-color {
     color: #CC1919;
 }
-.permalink-color {
+.link-color-grayish {
     color: #8899A6;
+}
+.permalink-color {
+    .link-color-grayish;
 }
 
 body {
@@ -49,6 +52,12 @@ body {
         }
     }
 
+    .profilename {
+        .nick {
+            .link-color-grayish;
+        }
+    }
+
 }
 a.contentTypeButton {
     color: #FFF;
@@ -74,10 +83,13 @@ a.contentTypeButton {
             border-bottom: 0;
             white-space: nowrap;
         }
-        .icon-container img.u-photo {
-            max-height: 48px;
-            width: auto;
-            margin-right: 10px;
+        .icon-container {
+            img.u-photo {
+                max-height: 48px;
+                width: auto;
+                margin-right: 10px;
+            }
+            float: left;
         }
         .fn {
             vertical-align: top;
@@ -85,6 +97,13 @@ a.contentTypeButton {
             font-size: 1.6em;
             font-weight: 600;
             color: #333;
+
+            .nick {
+                display: block;
+                font-size: 90%;
+                font-weight: 400;
+                .link-color-grayish;
+            }
         }
     }
     .datestamp {
