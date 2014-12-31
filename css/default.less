@@ -76,7 +76,7 @@ body {
         }
     }
     .reply-text {
-        padding: 10px 20px 0;
+        padding: 10 20px 0;
     }
     .entry-content {
         clear: both;
@@ -121,32 +121,16 @@ body {
 
 .idno_pages_homepage, .idno_pages_user_view {
 
-    .page-body .row {
-
+    .idno-entry + .idno-entry {
         .idno-content, .idno-object {
             margin-top: 0;
             border-radius: 0;
             border-bottom: 0;
         }
-
-        &:first-child + .page-body .row {
-            .idno-content, .idno-object {
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
-                margin-top: 1em;
-            }
-        }
-
-        &:last-child {
-            .idno-content, .idno-object {
-                border-bottom-left-radius: 10px;
-                border-bottom-right-radius: 10px;
-                border-bottom-width: 1px;
-            }
-        }
     }
 
     .idno-content, .idno-object {
+
         .author {
             .icon-container img.u-photo {
                 max-height: 28px;
