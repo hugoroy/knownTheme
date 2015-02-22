@@ -94,6 +94,8 @@ a.contentTypeButton {
             white-space: nowrap;
         }
         .icon-container {
+            height: auto;
+            width: auto;
             img.u-photo {
                 max-height: 48px;
                 width: auto;
@@ -191,12 +193,22 @@ a.contentTypeButton {
             .fn {
                 line-height: 1.2em;
                 font-size: 1.2em;
+                display: none;
             }
         }
     }
 }
 
 
+.idno_pages_entity_view {
+    .idno-content, .idno-object {
+        .author {
+            .fn {
+                display: block;
+            }
+        }
+    }
+}
 
 .page-account-settings,  .page-admin {
     .page-body {
